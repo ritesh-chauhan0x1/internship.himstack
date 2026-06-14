@@ -1,1 +1,300 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Launch your career with the HimStack Internship Program. A structured pathway from unpaid training to paid contribution and full-time employment.">
+  <meta name="keywords" content="HimStack, Internship, EdTech, software engineer internship, backend intern, AI intern, web developer intern">
+  <meta name="author" content="HimStack">
+  <title>Internship</title>
+  <link rel='icon' type='image/png' href='./logo/logoHimstack.png'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/global.css">
+  <style>
+    .timeline-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 3rem;
+    }
+    .timeline-card {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem 2rem;
+      position: relative;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .timeline-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(15, 91, 216, 0.3);
+      box-shadow: var(--shadow-soft);
+    }
+    .highlight-card {
+      border: 1px solid var(--primary);
+      box-shadow: 0 8px 30px rgba(15, 91, 216, 0.08);
+      background: linear-gradient(180deg, var(--surface-strong), rgba(15, 91, 216, 0.02));
+    }
+    .stage-badge {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 20px;
+      display: inline-block;
+      width: fit-content;
+      margin-bottom: 1.25rem;
+    }
+    .badge-unpaid {
+      background: rgba(91, 100, 117, 0.1);
+      color: var(--muted);
+    }
+    .badge-paid {
+      background: rgba(15, 159, 154, 0.1);
+      color: var(--primary-2);
+    }
+    .badge-fulltime {
+      background: rgba(15, 91, 216, 0.1);
+      color: var(--primary);
+    }
+    .salary-tag {
+      font-size: 0.95rem;
+      font-weight: 750;
+      color: var(--muted);
+      margin-top: 0.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .salary-tag.paid-tag {
+      color: var(--primary-2);
+    }
+    .salary-tag.fulltime-tag {
+      color: var(--primary);
+    }
+    .benefit-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: auto;
+    }
+    .benefit-bullets li {
+      position: relative;
+      padding-left: 22px;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .benefit-bullets li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--primary);
+      font-weight: 900;
+    }
+    @media (max-width: 992px) {
+      .timeline-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+  </style>
+</head>
+<body class="loading">
+  <div class="loader" aria-label="Loading HimStack"><div class="loader-mark"><img src="./logo/logoHimstack.png" alt="HimStack"></div></div>
+
+  <div class="floating-social" aria-label="Social media links">
+    <a href="https://www.instagram.com/himstack?igsh=MTZnMjF3Y2E1bDZkYw==" target="_blank" rel="noopener" aria-label="Instagram"><img src="./icons/instagram.svg" alt=""></a>
+    <a href="https://www.linkedin.com/company/himstack-pvt-ltd/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="./icons/linkedin.svg" alt=""></a>
+    <a href="https://github.com/himstack" target="_blank" rel="noopener" aria-label="GitHub"><img src="./icons/github.svg" alt=""></a>
+    <a href="https://x.com/Himstackpvt" target="_blank" rel="noopener" aria-label="Twitter"><img src="./icons/twitter.svg" alt=""></a>
+    <a href="mailto:contact@himstack.com" aria-label="Email"><img src="./icons/email.svg" alt=""></a>
+  </div>
+
+  <header class="site-header scrolled">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="https://himstack.com" aria-label="HimStack home">
+        <span class="brand-mark"><img class="brand-logo" src="./logo/logoHimstack.png" alt="HimStack logo"></span>
+        <span>HimStack</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="https://himstack.com" class="nav-link" style="font-weight: 750; font-size: 0.95rem; color: var(--muted); text-decoration: none; transition: color 0.25s ease;">Main Site</a>
+        <a href="https://forms.gle/oA9skFdTjeCKaaq5A" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 8px 16px; min-height: auto; font-size: 0.9rem;">Apply Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container section-title center" data-aos="fade-up" style="max-width: 850px; margin-bottom: 2rem;">
+        <span class="eyebrow">Internship Program 2026</span>
+        <h1 style="font-size: clamp(2.5rem, 5vw, 3.8rem); line-height: 1.1; margin-bottom: 1.5rem;">Accelerate Your Career with HimStack</h1>
+        <p style="font-size: 1.15rem; max-width: 680px; margin-inline: auto;">Launch your software development journey through practical training, real-world modules, and a structured path to paid compensation and full-time employment.</p>
+        <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://forms.gle/oA9skFdTjeCKaaq5A" target="_blank" rel="noopener" class="btn btn-primary">Apply Now</a>
+          <a href="#program-structure" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="program-structure" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="section-title center" data-aos="fade-up">
+          <span class="eyebrow">The Program Pathway</span>
+          <h2>A Structured Learning Journey</h2>
+          <p style="max-width: 620px; margin-inline: auto; color: var(--muted);">We value talent and commitment. Our program is divided into clear, performance-based phases to support your growth from learning to direct professional impact.</p>
+        </div>
+        
+        <div class="timeline-container">
+          <!-- Card 1: Stage 1 -->
+          <div class="timeline-card" data-aos="fade-up">
+            <div class="stage-badge badge-unpaid">Phase 1 (2 Months)</div>
+            <h3>Learning &amp; Integration</h3>
+            <div class="salary-tag">Free/Unpaid Internship</div>
+            <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.5;">Establish your foundation. You will get familiar with our active engineering guidelines, build prototype features, and collaborate on codebase reviews with senior mentor feedback.</p>
+            <ul class="benefit-bullets">
+              <li>Comprehensive onboarding</li>
+              <li>Guided tasks &amp; code reviews</li>
+              <li>Flexible remote/hybrid hours</li>
+              <li>Evaluation for Phase 2 at Month 2</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Stage 2 -->
+          <div class="timeline-card highlight-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="stage-badge badge-paid">Phase 2 (4 Months)</div>
+            <h3>Feature Ownership</h3>
+            <div class="salary-tag paid-tag">Paid Internship</div>
+            <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.5;">Transition into active product contribution. Based on your Phase 1 performance, you will assume module ownership and receive a monthly stipend for delivering production features.</p>
+            <ul class="benefit-bullets">
+              <li>Monthly performance stipend</li>
+              <li>Direct engineering responsibility</li>
+              <li>Collaborative startup sprints</li>
+              <li>FTE evaluation checkpoints</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Stage 3 -->
+          <div class="timeline-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="stage-badge badge-fulltime">Phase 3</div>
+            <h3>Full-Time Transition</h3>
+            <div class="salary-tag fulltime-tag">FTE Conversion</div>
+            <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.5;">Join the core team. High-performing interns who complete Phase 2 will receive a direct conversion offer for a full-time engineering or growth placement within HimStack.</p>
+            <ul class="benefit-bullets">
+              <li>Competitive full-time salary</li>
+              <li>Full employee benefits</li>
+              <li>Rapid growth opportunities</li>
+              <li>Core member equity potential</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 4rem; padding-bottom: 4rem;">
+      <div class="container split" style="align-items: center; gap: 40px;">
+        <div data-aos="fade-right">
+          <span class="eyebrow">About HimStack</span>
+          <h2>A Modern Technology Startup</h2>
+          <p style="color: var(--muted); line-height: 1.6; margin-bottom: 1.25rem;">
+            HimStack is a dynamic product and service-based technology startup founded on 3 June 2026. We build intelligent, AI-powered ERP platforms and cloud solutions tailored for schools, colleges, coaching institutes, and educational organizations.
+          </p>
+          <p style="color: var(--muted); line-height: 1.6; margin-bottom: 0;">
+            By joining our internship cohort, you will work directly on active product systems, contribute to production codebases, and experience first-hand how an agile startup operates from the ground up.
+          </p>
+        </div>
+        <div class="glass-card" data-aos="fade-left" style="padding: 2.25rem; border-left: 4px solid var(--primary); margin: 0;">
+          <h4 style="font-family: var(--display); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem; color: var(--heading);">Our Core Mission</h4>
+          <p style="font-size: 0.95rem; color: var(--muted); line-height: 1.55; margin: 0;">
+            To transform educational institutions with modern, automated, and intelligent software systems that reduce administrative friction, automate workloads, and enhance learning outcomes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: rgba(15, 91, 216, 0.02); border-block: 1px solid var(--line);">
+      <div class="container">
+        <div class="section-title center" data-aos="fade-up">
+          <span class="eyebrow">Focus Tracks</span>
+          <h2>Domains You Can Explore</h2>
+        </div>
+        <div class="cards-grid">
+          <div class="glass-card" data-aos="fade-up">
+            <div class="icon-box" style="background: linear-gradient(135deg, #0f5bd8, #0f9f9a); color: white; display: grid; place-items: center; border-radius: 8px; width: 48px; height: 48px; font-weight: 800; margin-bottom: 1.25rem;">FE</div>
+            <h3>Frontend Engineering</h3>
+            <p>Work on HTML, CSS, JavaScript, and interactive dashboard systems. Build user interfaces that simplify educational admin and portal workflows.</p>
+          </div>
+          <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box" style="background: linear-gradient(135deg, #0f5bd8, #0f9f9a); color: white; display: grid; place-items: center; border-radius: 8px; width: 48px; height: 48px; font-weight: 800; margin-bottom: 1.25rem;">BE</div>
+            <h3>Backend Engineering</h3>
+            <p>Work on RESTful APIs, authentication logic, database schema design, and secure cloud pipelines to scale institutional data access.</p>
+          </div>
+          <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box" style="background: linear-gradient(135deg, #0f5bd8, #0f9f9a); color: white; display: grid; place-items: center; border-radius: 8px; width: 48px; height: 48px; font-weight: 800; margin-bottom: 1.25rem;">AI</div>
+            <h3>AI &amp; Data Analytics</h3>
+            <p>Work on educational analytics, reporting structures, predictive modeling, and model integration to improve student outcome tracking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="glass-card form-card" style="max-width: 780px; margin-inline: auto; text-align: center; padding: 3.5rem 2rem;" data-aos="fade-up">
+          <span class="eyebrow" style="margin-bottom: 0.5rem; display: inline-block;">Ready to Apply?</span>
+          <h2 style="font-size: 2.25rem; font-family: var(--display); font-weight: 900; margin-bottom: 1rem;">Launch Your Application</h2>
+          <p style="color: var(--muted); max-width: 540px; margin-inline: auto; margin-bottom: 2rem; font-size: 1.05rem;">We recruit cohorts periodically throughout the year. Fill out the application form with your details, technical tracks, and portfolio links.</p>
+          
+          <a href="https://forms.gle/oA9skFdTjeCKaaq5A" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 14px 32px; font-size: 1.05rem; display: inline-block; text-decoration: none; border-radius: var(--radius); transition: all 0.25s ease;">Open Application Form</a>
+          
+          <div style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--line);">
+            <p style="font-size: 0.95rem; color: var(--muted); margin-bottom: 0.5rem;">For any questions or application support, contact our recruitment team:</p>
+            <p style="font-weight: 700; font-size: 1.05rem; margin: 0;">
+              Email: 
+              <a href="mailto:contact@himstack.com" style="color: var(--primary); text-decoration: none;">contact@himstack.com</a> 
+              &nbsp;&nbsp;•&nbsp;&nbsp; 
+              <a href="mailto:info@himstack.com" style="color: var(--primary); text-decoration: none;">info@himstack.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line);">
+        <div>
+          <a class="brand" href="https://himstack.com">
+            <span class="brand-mark"><img class="brand-logo" src="./logo/logoHimstack.png" alt="HimStack logo"></span>
+            <span>HimStack</span>
+          </a>
+          <p style="margin-top: 6px; font-size: 0.9rem; color: var(--muted);">AI-powered ERP and custom digital solutions for education.</p>
+        </div>
+        <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+          <a href="https://himstack.com" style="color: var(--muted); font-size: 0.95rem; text-decoration: none; font-weight: 600; transition: color 0.25s ease;">Main Website</a>
+          <a href="https://himstack.com/pages/about.html" style="color: var(--muted); font-size: 0.95rem; text-decoration: none; font-weight: 600; transition: color 0.25s ease;">About Us</a>
+          <a href="https://himstack.com/pages/contact.html" style="color: var(--muted); font-size: 0.95rem; text-decoration: none; font-weight: 600; transition: color 0.25s ease;">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright 2026 HimStack. All rights reserved.</p>
+        <p>Founded on 3 June 2026.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
